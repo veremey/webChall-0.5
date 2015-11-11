@@ -1,0 +1,151 @@
+
+body
+	font-family: Arial, sans-serif
+	font-size: 16px
+	line-height: 1.25
+	color: #8c8c8c
+	min-width: 1180px
+	background-color: #FAFAFA
+
+.out
+	position: relative
+	min-height: 720px
+	height: 100%
+	margin-bottom: -45px
+	+clr
+.push
+	clear: both
+	height: 45px
+	// ##############  HEADER  ######
+
+.header
+	background-color: #35474c
+	height: 60px
+	.logo
+		width: 180px
+		height: 47px
+		float: left
+		margin: 5px 20px 0 0
+	h1
+		font-size: 20px
+		color: #D4E1E6
+		width: 490px
+		margin: 25px 0 0 200px
+		border-bottom: 1px solid #859499
+		+cl
+		&.color
+			color: #00CFFF
+			border-bottom: 1px solid #859499
+
+.logo
+	display: inline-block
+	h2
+		+hidetext
+.help
+	float: left
+	&:before
+		width: 16px
+		height: 16px
+		background-image: url("../img/icons/help.png")
+	&:hover
+		&:before
+			background-image: url("../img/icons/help_h.png")
+.option
+	float: right
+	margin-left: 68px
+	&:before
+		width: 16px
+		height: 16px
+		background-image: url("../img/icons/icon-option.png")
+	&:hover
+		&:before
+			background-image: url("../img/icons/icon-option-act.png")
+.help,
+.option
+	position: relative
+	color: #D4E1E6
+	font-size: 18px
+	text-decoration: none
+	+cl
+	+tr(.3s)
+	&:before
+		content: ""
+		position: absolute
+		top: 3px
+		left: -28px
+	&:hover
+		color: #000
+
+// ############ footer ######
+
+.footer
+	position: relative
+	bottom: 0
+	width: 100%
+	height: 45px
+	background-color: #35474c
+	+clr
+	&__nav
+		font-size: 0
+		li
+			position: relative
+			display: inline-block
+			margin-right: 50px
+			height: 45px
+			padding-top: 10px
+			&:last-child
+				margin-right: 0
+			&:last-child a::after
+				content: none
+			&.is_active
+				a
+					opacity: 1
+			&.is_active a:after
+				background-image: url("../img/icons/arrow_act.png")
+		a
+			position: relative
+			font-size: 18px
+			color: #D4E1E6
+			opacity: 0.5
+			text-decoration: none
+			+tr(.3s)
+			+cl
+			&:hover
+				color: #FFF
+				opacity: 1
+				&:after
+					background-image: url("../img/icons/arrow_act.png")
+			&:after
+				content: ""
+				position: absolute
+				top: 7px
+				right: -30px
+				width: 12px
+				height: 10px
+				background-image: url("../img/icons/arrow.png")
+				+tr(.3s)
+
+.footer__page
+	float: left
+	margin-left: 20px
+	margin-right: 10px
+	line-height: 45px
+	color: #D4E1E6
+	font-size: 18px
+	+cl
+.footer__site
+	float: left
+	background-color: $n
+	width: 300px
+	height: 22px
+	margin-top: 12px
+	padding: 0 5px
+	color: #26b5d7
+	font-size: 18px
+	border-bottom: 1px solid #93a0a5
+	+c
+	+placeholder
+		font-size: 18px
+		color: #93a0a5
+		line-height: 1
+		+cl

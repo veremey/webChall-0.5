@@ -1,0 +1,488 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$arrow-name: 'arrow'
+$arrow-x: 261px
+$arrow-y: 172px
+$arrow-offset-x: -261px
+$arrow-offset-y: -172px
+$arrow-width: 12px
+$arrow-height: 10px
+$arrow-total-width: 302px
+$arrow-total-height: 257px
+$arrow-image: 'sprite.png'
+$arrow: 261px 172px -261px -172px 12px 10px 302px 257px 'sprite.png' 'arrow'
+$arrow_act-name: 'arrow_act'
+$arrow_act-x: 261px
+$arrow_act-y: 162px
+$arrow_act-offset-x: -261px
+$arrow_act-offset-y: -162px
+$arrow_act-width: 12px
+$arrow_act-height: 10px
+$arrow_act-total-width: 302px
+$arrow_act-total-height: 257px
+$arrow_act-image: 'sprite.png'
+$arrow_act: 261px 162px -261px -162px 12px 10px 302px 257px 'sprite.png' 'arrow_act'
+$help-name: 'help'
+$help-x: 282px
+$help-y: 100px
+$help-offset-x: -282px
+$help-offset-y: -100px
+$help-width: 16px
+$help-height: 16px
+$help-total-width: 302px
+$help-total-height: 257px
+$help-image: 'sprite.png'
+$help: 282px 100px -282px -100px 16px 16px 302px 257px 'sprite.png' 'help'
+$help_h-name: 'help_h'
+$help_h-x: 282px
+$help_h-y: 116px
+$help_h-offset-x: -282px
+$help_h-offset-y: -116px
+$help_h-width: 16px
+$help_h-height: 16px
+$help_h-total-width: 302px
+$help_h-total-height: 257px
+$help_h-image: 'sprite.png'
+$help_h: 282px 116px -282px -116px 16px 16px 302px 257px 'sprite.png' 'help_h'
+$icon-delete-name: 'icon-delete'
+$icon-delete-x: 0px
+$icon-delete-y: 230px
+$icon-delete-offset-x: 0px
+$icon-delete-offset-y: -230px
+$icon-delete-width: 25px
+$icon-delete-height: 27px
+$icon-delete-total-width: 302px
+$icon-delete-total-height: 257px
+$icon-delete-image: 'sprite.png'
+$icon-delete: 0px 230px 0px -230px 25px 27px 302px 257px 'sprite.png' 'icon-delete'
+$icon-duplicate-name: 'icon-duplicate'
+$icon-duplicate-x: 150px
+$icon-duplicate-y: 192px
+$icon-duplicate-offset-x: -150px
+$icon-duplicate-offset-y: -192px
+$icon-duplicate-width: 27px
+$icon-duplicate-height: 29px
+$icon-duplicate-total-width: 302px
+$icon-duplicate-total-height: 257px
+$icon-duplicate-image: 'sprite.png'
+$icon-duplicate: 150px 192px -150px -192px 27px 29px 302px 257px 'sprite.png' 'icon-duplicate'
+$icon-edit-name: 'icon-edit'
+$icon-edit-x: 177px
+$icon-edit-y: 192px
+$icon-edit-offset-x: -177px
+$icon-edit-offset-y: -192px
+$icon-edit-width: 25px
+$icon-edit-height: 28px
+$icon-edit-total-width: 302px
+$icon-edit-total-height: 257px
+$icon-edit-image: 'sprite.png'
+$icon-edit: 177px 192px -177px -192px 25px 28px 302px 257px 'sprite.png' 'icon-edit'
+$icon-image-name: 'icon-image'
+$icon-image-x: 0px
+$icon-image-y: 0px
+$icon-image-offset-x: 0px
+$icon-image-offset-y: 0px
+$icon-image-width: 147px
+$icon-image-height: 104px
+$icon-image-total-width: 302px
+$icon-image-total-height: 257px
+$icon-image-image: 'sprite.png'
+$icon-image: 0px 0px 0px 0px 147px 104px 302px 257px 'sprite.png' 'icon-image'
+$icon-move-name: 'icon-move'
+$icon-move-x: 232px
+$icon-move-y: 162px
+$icon-move-offset-x: -232px
+$icon-move-offset-y: -162px
+$icon-move-width: 29px
+$icon-move-height: 29px
+$icon-move-total-width: 302px
+$icon-move-total-height: 257px
+$icon-move-image: 'sprite.png'
+$icon-move: 232px 162px -232px -162px 29px 29px 302px 257px 'sprite.png' 'icon-move'
+$icon-option-act-name: 'icon-option-act'
+$icon-option-act-x: 282px
+$icon-option-act-y: 66px
+$icon-option-act-offset-x: -282px
+$icon-option-act-offset-y: -66px
+$icon-option-act-width: 17px
+$icon-option-act-height: 17px
+$icon-option-act-total-width: 302px
+$icon-option-act-total-height: 257px
+$icon-option-act-image: 'sprite.png'
+$icon-option-act: 282px 66px -282px -66px 17px 17px 302px 257px 'sprite.png' 'icon-option-act'
+$icon-option-name: 'icon-option'
+$icon-option-x: 282px
+$icon-option-y: 83px
+$icon-option-offset-x: -282px
+$icon-option-offset-y: -83px
+$icon-option-width: 17px
+$icon-option-height: 17px
+$icon-option-total-width: 302px
+$icon-option-total-height: 257px
+$icon-option-image: 'sprite.png'
+$icon-option: 282px 83px -282px -83px 17px 17px 302px 257px 'sprite.png' 'icon-option'
+$icon-select-name: 'icon-select'
+$icon-select-x: 282px
+$icon-select-y: 132px
+$icon-select-offset-x: -282px
+$icon-select-offset-y: -132px
+$icon-select-width: 18px
+$icon-select-height: 13px
+$icon-select-total-width: 302px
+$icon-select-total-height: 257px
+$icon-select-image: 'sprite.png'
+$icon-select: 282px 132px -282px -132px 18px 13px 302px 257px 'sprite.png' 'icon-select'
+$icon-select_act-name: 'icon-select_act'
+$icon-select_act-x: 282px
+$icon-select_act-y: 145px
+$icon-select_act-offset-x: -282px
+$icon-select_act-offset-y: -145px
+$icon-select_act-width: 18px
+$icon-select_act-height: 13px
+$icon-select_act-total-width: 302px
+$icon-select_act-total-height: 257px
+$icon-select_act-image: 'sprite.png'
+$icon-select_act: 282px 145px -282px -145px 18px 13px 302px 257px 'sprite.png' 'icon-select_act'
+$icon_l1-name: 'icon_l1'
+$icon_l1-x: 282px
+$icon_l1-y: 48px
+$icon_l1-offset-x: -282px
+$icon_l1-offset-y: -48px
+$icon_l1-width: 18px
+$icon_l1-height: 18px
+$icon_l1-total-width: 302px
+$icon_l1-total-height: 257px
+$icon_l1-image: 'sprite.png'
+$icon_l1: 282px 48px -282px -48px 18px 18px 302px 257px 'sprite.png' 'icon_l1'
+$icon_l2-name: 'icon_l2'
+$icon_l2-x: 282px
+$icon_l2-y: 30px
+$icon_l2-offset-x: -282px
+$icon_l2-offset-y: -30px
+$icon_l2-width: 18px
+$icon_l2-height: 18px
+$icon_l2-total-width: 302px
+$icon_l2-total-height: 257px
+$icon_l2-image: 'sprite.png'
+$icon_l2: 282px 30px -282px -30px 18px 18px 302px 257px 'sprite.png' 'icon_l2'
+$icon_t1-name: 'icon_t1'
+$icon_t1-x: 202px
+$icon_t1-y: 192px
+$icon_t1-offset-x: -202px
+$icon_t1-offset-y: -192px
+$icon_t1-width: 26px
+$icon_t1-height: 26px
+$icon_t1-total-width: 302px
+$icon_t1-total-height: 257px
+$icon_t1-image: 'sprite.png'
+$icon_t1: 202px 192px -202px -192px 26px 26px 302px 257px 'sprite.png' 'icon_t1'
+$icon_t2-name: 'icon_t2'
+$icon_t2-x: 282px
+$icon_t2-y: 233px
+$icon_t2-offset-x: -282px
+$icon_t2-offset-y: -233px
+$icon_t2-width: 12px
+$icon_t2-height: 16px
+$icon_t2-total-width: 302px
+$icon_t2-total-height: 257px
+$icon_t2-image: 'sprite.png'
+$icon_t2: 282px 233px -282px -233px 12px 16px 302px 257px 'sprite.png' 'icon_t2'
+$icon_t3-name: 'icon_t3'
+$icon_t3-x: 282px
+$icon_t3-y: 158px
+$icon_t3-offset-x: -282px
+$icon_t3-offset-y: -158px
+$icon_t3-width: 13px
+$icon_t3-height: 18px
+$icon_t3-total-width: 302px
+$icon_t3-total-height: 257px
+$icon_t3-image: 'sprite.png'
+$icon_t3: 282px 158px -282px -158px 13px 18px 302px 257px 'sprite.png' 'icon_t3'
+$icon_tc-name: 'icon_tc'
+$icon_tc-x: 282px
+$icon_tc-y: 190px
+$icon_tc-offset-x: -282px
+$icon_tc-offset-y: -190px
+$icon_tc-width: 14px
+$icon_tc-height: 14px
+$icon_tc-total-width: 302px
+$icon_tc-total-height: 257px
+$icon_tc-image: 'sprite.png'
+$icon_tc: 282px 190px -282px -190px 14px 14px 302px 257px 'sprite.png' 'icon_tc'
+$icon_tl-name: 'icon_tl'
+$icon_tl-x: 282px
+$icon_tl-y: 204px
+$icon_tl-offset-x: -282px
+$icon_tl-offset-y: -204px
+$icon_tl-width: 14px
+$icon_tl-height: 14px
+$icon_tl-total-width: 302px
+$icon_tl-total-height: 257px
+$icon_tl-image: 'sprite.png'
+$icon_tl: 282px 204px -282px -204px 14px 14px 302px 257px 'sprite.png' 'icon_tl'
+$icon_tr-name: 'icon_tr'
+$icon_tr-x: 282px
+$icon_tr-y: 176px
+$icon_tr-offset-x: -282px
+$icon_tr-offset-y: -176px
+$icon_tr-width: 14px
+$icon_tr-height: 14px
+$icon_tr-total-width: 302px
+$icon_tr-total-height: 257px
+$icon_tr-image: 'sprite.png'
+$icon_tr: 282px 176px -282px -176px 14px 14px 302px 257px 'sprite.png' 'icon_tr'
+$lock-name: 'lock'
+$lock-x: 282px
+$lock-y: 218px
+$lock-offset-x: -282px
+$lock-offset-y: -218px
+$lock-width: 13px
+$lock-height: 15px
+$lock-total-width: 302px
+$lock-total-height: 257px
+$lock-image: 'sprite.png'
+$lock: 282px 218px -282px -218px 13px 15px 302px 257px 'sprite.png' 'lock'
+$marker-name: 'marker'
+$marker-x: 282px
+$marker-y: 0px
+$marker-offset-x: -282px
+$marker-offset-y: 0px
+$marker-width: 20px
+$marker-height: 30px
+$marker-total-width: 302px
+$marker-total-height: 257px
+$marker-image: 'sprite.png'
+$marker: 282px 0px -282px 0px 20px 30px 302px 257px 'sprite.png' 'marker'
+$play-name: 'play'
+$play-x: 147px
+$play-y: 0px
+$play-offset-x: -147px
+$play-offset-y: 0px
+$play-width: 85px
+$play-height: 85px
+$play-total-width: 302px
+$play-total-height: 257px
+$play-image: 'sprite.png'
+$play: 147px 0px -147px 0px 85px 85px 302px 257px 'sprite.png' 'play'
+$s1-name: 's1'
+$s1-x: 120px
+$s1-y: 155px
+$s1-offset-x: -120px
+$s1-offset-y: -155px
+$s1-width: 56px
+$s1-height: 37px
+$s1-total-width: 302px
+$s1-total-height: 257px
+$s1-image: 'sprite.png'
+$s1: 120px 155px -120px -155px 56px 37px 302px 257px 'sprite.png' 's1'
+$s10-name: 's10'
+$s10-x: 232px
+$s10-y: 44px
+$s10-offset-x: -232px
+$s10-offset-y: -44px
+$s10-width: 49px
+$s10-height: 44px
+$s10-total-width: 302px
+$s10-total-height: 257px
+$s10-image: 'sprite.png'
+$s10: 232px 44px -232px -44px 49px 44px 302px 257px 'sprite.png' 's10'
+$s11-name: 's11'
+$s11-x: 232px
+$s11-y: 0px
+$s11-offset-x: -232px
+$s11-offset-y: 0px
+$s11-width: 50px
+$s11-height: 44px
+$s11-total-width: 302px
+$s11-total-height: 257px
+$s11-image: 'sprite.png'
+$s11: 232px 0px -232px 0px 50px 44px 302px 257px 'sprite.png' 's11'
+$s12-name: 's12'
+$s12-x: 176px
+$s12-y: 155px
+$s12-offset-x: -176px
+$s12-offset-y: -155px
+$s12-width: 56px
+$s12-height: 36px
+$s12-total-width: 302px
+$s12-total-height: 257px
+$s12-image: 'sprite.png'
+$s12: 176px 155px -176px -155px 56px 36px 302px 257px 'sprite.png' 's12'
+$s13-name: 's13'
+$s13-x: 0px
+$s13-y: 104px
+$s13-offset-x: 0px
+$s13-offset-y: -104px
+$s13-width: 51px
+$s13-height: 51px
+$s13-total-width: 302px
+$s13-total-height: 257px
+$s13-image: 'sprite.png'
+$s13: 0px 104px 0px -104px 51px 51px 302px 257px 'sprite.png' 's13'
+$s14-name: 's14'
+$s14-x: 112px
+$s14-y: 192px
+$s14-offset-x: -112px
+$s14-offset-y: -192px
+$s14-width: 38px
+$s14-height: 31px
+$s14-total-width: 302px
+$s14-total-height: 257px
+$s14-image: 'sprite.png'
+$s14: 112px 192px -112px -192px 38px 31px 302px 257px 'sprite.png' 's14'
+$s15-name: 's15'
+$s15-x: 232px
+$s15-y: 130px
+$s15-offset-x: -232px
+$s15-offset-y: -130px
+$s15-width: 48px
+$s15-height: 32px
+$s15-total-width: 302px
+$s15-total-height: 257px
+$s15-image: 'sprite.png'
+$s15: 232px 130px -232px -130px 48px 32px 302px 257px 'sprite.png' 's15'
+$s2-name: 's2'
+$s2-x: 0px
+$s2-y: 192px
+$s2-offset-x: 0px
+$s2-offset-y: -192px
+$s2-width: 56px
+$s2-height: 38px
+$s2-total-width: 302px
+$s2-total-height: 257px
+$s2-image: 'sprite.png'
+$s2: 0px 192px 0px -192px 56px 38px 302px 257px 'sprite.png' 's2'
+$s3-name: 's3'
+$s3-x: 56px
+$s3-y: 192px
+$s3-offset-x: -56px
+$s3-offset-y: -192px
+$s3-width: 56px
+$s3-height: 38px
+$s3-total-width: 302px
+$s3-total-height: 257px
+$s3-image: 'sprite.png'
+$s3: 56px 192px -56px -192px 56px 38px 302px 257px 'sprite.png' 's3'
+$s4-name: 's4'
+$s4-x: 112px
+$s4-y: 104px
+$s4-offset-x: -112px
+$s4-offset-y: -104px
+$s4-width: 58px
+$s4-height: 42px
+$s4-total-width: 302px
+$s4-total-height: 257px
+$s4-image: 'sprite.png'
+$s4: 112px 104px -112px -104px 58px 42px 302px 257px 'sprite.png' 's4'
+$s5-name: 's5'
+$s5-x: 232px
+$s5-y: 88px
+$s5-offset-x: -232px
+$s5-offset-y: -88px
+$s5-width: 47px
+$s5-height: 42px
+$s5-total-width: 302px
+$s5-total-height: 257px
+$s5-image: 'sprite.png'
+$s5: 232px 88px -232px -88px 47px 42px 302px 257px 'sprite.png' 's5'
+$s6-name: 's6'
+$s6-x: 51px
+$s6-y: 104px
+$s6-offset-x: -51px
+$s6-offset-y: -104px
+$s6-width: 61px
+$s6-height: 42px
+$s6-total-width: 302px
+$s6-total-height: 257px
+$s6-image: 'sprite.png'
+$s6: 51px 104px -51px -104px 61px 42px 302px 257px 'sprite.png' 's6'
+$s7-name: 's7'
+$s7-x: 170px
+$s7-y: 104px
+$s7-offset-x: -170px
+$s7-offset-y: -104px
+$s7-width: 57px
+$s7-height: 42px
+$s7-total-width: 302px
+$s7-total-height: 257px
+$s7-image: 'sprite.png'
+$s7: 170px 104px -170px -104px 57px 42px 302px 257px 'sprite.png' 's7'
+$s8-name: 's8'
+$s8-x: 0px
+$s8-y: 155px
+$s8-offset-x: 0px
+$s8-offset-y: -155px
+$s8-width: 63px
+$s8-height: 37px
+$s8-total-width: 302px
+$s8-total-height: 257px
+$s8-image: 'sprite.png'
+$s8: 0px 155px 0px -155px 63px 37px 302px 257px 'sprite.png' 's8'
+$s9-name: 's9'
+$s9-x: 63px
+$s9-y: 155px
+$s9-offset-x: -63px
+$s9-offset-y: -155px
+$s9-width: 57px
+$s9-height: 37px
+$s9-total-width: 302px
+$s9-total-height: 257px
+$s9-image: 'sprite.png'
+$s9: 63px 155px -63px -155px 57px 37px 302px 257px 'sprite.png' 's9'
+$spritesheet-width: 302px
+$spritesheet-height: 257px
+$spritesheet-image: 'sprite.png'
+$spritesheet-sprites: $arrow $arrow_act $help $help_h $icon-delete $icon-duplicate $icon-edit $icon-image $icon-move $icon-option-act $icon-option $icon-select $icon-select_act $icon_l1 $icon_l2 $icon_t1 $icon_t2 $icon_t3 $icon_tc $icon_tl $icon_tr $lock $marker $play $s1 $s10 $s11 $s12 $s13 $s14 $s15 $s2 $s3 $s4 $s5 $s6 $s7 $s8 $s9
+$spritesheet: 302px 257px 'sprite.png' $spritesheet-sprites
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(../img/#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

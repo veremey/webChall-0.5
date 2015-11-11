@@ -1,0 +1,187 @@
+// ######## index ################
+
+.container_wellcome
+	position: relative
+	width: 65%
+	height: 100%
+	background: #43acd1 url('../img/1.jpg') center no-repeat
+	-webkit-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	+clr
+	&_text
+		position: absolute
+		left: 50%
+		bottom: 20px
+		width: 580px
+		text-align: center
+		z-index: 5
+		transform: translate(-50%, 0)
+	h1, p
+		color: #D4E1E6
+		+b
+	h1
+		font-size: 72px
+		line-height: 68px
+	p
+		font-size: 24px
+.icon-play
+	display: inline-block
+	width: 86px
+	height: 86px
+	margin-top: 25px
+	background-image: url("../img/icons/play.png")
+	-webkit-border-radius: 50%
+	border-radius: 50%
+	&:hover
+		cursor: pointer
+		opacity: .6
+.wellcome_shadow
+	width: 100%
+	height: 100%
+	+coverdiv
+	z-index: 2
+	+g($n,rgba(0, 0, 0, .5))
+
+.container_input
+	position: relative
+	width: 35%
+	height: 100%
+	text-align: center
+	background-color: #D4E1E6
+	+clr
+	.logo
+		width: 180px
+		height: 150px
+		margin: 80px 0 60px
+
+.wellcome__form
+	width: 261px
+	margin: 0 auto
+	+clr
+	.is_hide
+		display: none
+	input
+		width: 100%
+		height: 28px
+		margin-bottom: 20px
+		vertical-align: top
+		display: block
+		border: none
+		outline: none
+		font-size: 18px
+		color: #6F99AD
+		padding: 7px
+		border-bottom: 2px solid #6F99AD
+		background-color: $n
+		+box
+		+placeholder
+			font-size: 18px
+			color: #6f99ad
+			+cl
+	input[type="hiden"]
+		height: 0
+		margin: 0
+		padding: 0
+		border: 0
+
+.input-row__field
+	display: inline-block
+	vertical-align: top
+	width: 100%
+
+
+.select__text
+	position: relative
+	display: block
+	padding: 0 15px 0 10px
+	height: 22px
+	font-size: 13px
+	line-height: 20px
+	border: 1px solid #828181
+	background: $n
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+.wellcome__form
+	.select
+		position: relative
+		cursor: pointer
+		font-size: 18px
+		font-weight: bold
+		z-index: 10
+		&:after
+			content: ""
+			position: absolute
+			width: 15px
+			right: 7px
+			top: 10px
+			height: 100%
+			+arr(16, 9, #83a7b8, b)
+	.select__text
+		background-color: $n
+		padding: 7px
+		text-align: left
+		font-size: 18px
+		height: 27px
+		line-height: 13px
+		color: #6F99AD
+		border-bottom: 2px solid #6F99AD
+.select__list
+	position: absolute
+	display: none
+	left: 1px
+	right: 1px
+	top: 22px
+	z-index: 100
+	background: #fff
+	li
+		font-size: 13px
+		line-height: 22px
+		background: #f5f5f5
+		padding: 5px 11px
+		cursor: pointer
+		-webkit-transition: background 0.2s linear
+		-moz-transition: background 0.2s linear
+		-o-transition: background 0.2s linear
+		transition: background 0.2s linear
+		&:hover
+			background-color: #ccc
+		h4
+			text-align: center
+		span
+			font-size: 13px
+			color: #000
+			margin-left: 14px
+
+.btn_label
+	font-size: 16px
+	color: #6F99AD
+	+cl
+	a
+		margin-left: 10px
+		color: #6f99ad
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+.container_btn_footer
+	position: absolute
+	bottom: 20px
+	left: 50%
+	width: 220px
+	margin: 110px auto 0
+	font-size: 12px
+	color: #6f99ad
+	+cl
+	transform: translate(-50%, 0)
+	a
+		color: #6f99ad
+		text-decoration: underline
+		&:hover
+			text-decoration: none

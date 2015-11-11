@@ -1,0 +1,72 @@
++font(beausans, pfbeausanspro-reg-webfont)
++font(calibril, calibril)
++font(xolu6imT, xolu6imT)
++font(MyriadProRegular, MyriadProRegular)
+
+=b
+	font-family: 'beausans', Arial, sans-serif
+	font-weight: normal
+
+=c
+	font-family: 'xolu6imT', Arial, sans-serif
+	font-weight: normal
+=cl
+	font-family: 'calibril', Arial, sans-serif
+	font-weight: 300
+
+=m
+	font-family: 'MyriadProRegular', Arial, sans-serif
+	font-weight: 300
+
+$n: transparent
+$green: #35474C
+a
+	text-decoration: none
++selection
+	color: #030303
+	background-color: #55DB30
+input[type="hiden"]
+	height: 0
+.btn
+	width: 216px
+	height: 36px
+	background-color: #6f99ad
+	border: 2px solid #6F99AD
+	color: #D4E1E6
+	font-size: 22px
+	margin: 45px 0 5px
+	-webkit-border-radius: 3px
+	border-radius: 3px
+	+c
+	&:hover
+		color: #FFF
+	&:active
+		color: #6F99AD
+		background-color: $n
+.get_left
+	float: left
+.get_right
+	float: right
+.container__main
+	width: 1180px
+	margin: 0 auto
+	+box
+	+clr
+
+.container__height
+	min-height: 600px
+	overflow: auto
+	position: absolute
+	top: 60px
+	bottom: 45px
+	width: 100%
+
+
+.triagle_big
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		right: 9px
+		top: 15px
+		+arr(15, 7, #97A0A3, b)

@@ -1,0 +1,382 @@
+.container_direction
+	float: left
+	width: 72%
+	background-color: #d4e1e6
+.main
+	background-color: #FFF
+	width: 825px
+	padding: 20px
+	margin: 8px auto
+	+clr
+	img
+		width: 100%
+		max-width: 100%
+		vertical-align: top
+	&__img
+		position: relative
+		background-color: #ddd
+		margin-bottom: 20px
+		+clr
+		&_wrap
+			float: left
+			vertical-align: top
+			width: 300px
+			margin: 35px 10px 25px 60px
+			text-align: center
+			img
+				max-width: 100%
+				vertical-align: top
+				margin-bottom: 15px
+			p
+				font-size: 18px
+				color: $green
+				+c
+		&_text
+			// width: 290px
+			font-size: 28px
+			color: $green
+			text-align: right
+			position: absolute
+			right: 20px
+			top: 60px
+			+b
+			&.color
+				top: 40px
+				font-size: 32px
+				+m
+				strong
+					font-size: 72px
+					line-height: .5
+					font-weight: 400
+					+m
+
+.title__main
+	font-size: 28px
+	color: #8C8C8C
+	text-align: center
+	margin: 30px 20px 30px
+	+b
+	&.color
+		color: $green
+.main__box
+	+clr
+.counter
+	width: 380px
+	background-color: #EFF2F4
+	padding: 15px 30px
+	text-align: center
+	margin: 0 0 20px 20px
+	+box
+	&.color
+		h5
+			color: $green
+			font-size: 22px
+			+c
+		strong
+			font-weight: bold
+			font-size: 26px
+	h5
+		font-size: 22px
+		line-height: 24px
+		color: #8C8C8C
+		+c
+	&__line
+		position: relative
+		height: 36px
+		margin: 25px 0 0
+		-webkit-border-radius: 3px
+		border-radius: 3px
+		background-color: $n
+		transform: skewX(-25deg)
+		&:before,
+		&:after
+			content: ""
+			+coverdiv
+			background-color: #d4e1e6
+			-webkit-border-radius: 3px
+			border-radius: 3px
+		&:after
+			background-color: #8c8c8c
+			width: 65%
+		&.color
+			margin-top: 15px
+			background-color: #D4E1E6
+			&:before
+				background-color: #D4E1E6
+			&:after
+				width: 72%
+				+gh(#feda00 40%, #5adb2f)
+			+ .btn
+				background-color: #00DC00
+				border-color: #00DC00
+				&:hover
+					color: #6F99AD
+			span
+				position: relative
+				display: inline-block
+				right: -120px
+				font-size: 32px
+				transform: skewX(25deg)
+				+c
+				font-weight: bold
+				color: $green
+				z-index: 20
+				sup
+					position: absolute
+					font-size: 18px
+					top: 4px
+					right: -15px
+		+ .btn
+			width: 196px
+			background-color: #8c8c8c
+			color: #FAFAFA
+			font-size: 24px
+			margin: 20px 0 0
+			border-color: #8c8c8c
+			+tr(.3s)
+			+c
+			&:hover
+				color: #d4e1e6
+			&:active
+				color: #6F99AD
+				background-color: $n
+.counter__money
+	font-size: 18px
+	color: $green
+	margin-top: 5px
+	strong
+		position: relative
+		font-size: 32px
+		color: $green
+		top: -4px
+		+c
+		font-weight: bold
+		margin-right: 20px
+		&:after
+			content: "грн"
+			position: absolute
+			font-size: 20px
+			line-height: 1
+			right: -35px
+			top: 0
+	span
+		font-size: 22px
+		+c
+		font-weight: bold
+.main__text
+	+clr
+	p
+		font-size: 16px
+		color: $green
+		+cl
+
+aside
+	float: right
+	width: 100% - 72%
+	background-color: #fafafa
+	padding: 20px 0 0 25px
+	+box
+
+.sidebar
+	width: 282px
+	float: left
+	+clr
+	&_item
+		float: left
+		margin: 0 23px 15px 0
+		&:hover
+			box-shadow: 0 0 1px 2px rgba(50, 50, 50, .6) inset
+		&:nth-child(3n)
+			margin-right: 0
+	&__tab
+		display: table
+		table-layout: flexible
+		width: 100%
+		margin: 3px 0 15px
+		.is_active
+			color: #18B1D5
+			border-bottom: 1px solid $green
+		a
+			display: table-cell
+			text-align: center
+			font-size: 20px
+			color: $green
+			border-bottom: 1px solid #ccc
+			+cl
+			&:hover
+				color: #18B1D5
+
+.side__content
+	display: none
+	&.is_active
+		display: block
+	+clr
+	label
+		display: block
+		font-size: 17px
+		color: $green
+		margin-bottom: 5px
+		+cl
+	figure
+		position: relative
+		display: inline-block
+		vertical-align: top
+		font-size: 0
+		width: 78px
+		height: 75px
+		text-align: center
+		border: 1px solid #ccc
+		-webkit-border-radius: 1px
+		border-radius: 1px
+		margin: 0
+		p
+			height: 58px
+		img,
+		.picture__text
+			max-width: 100%
+			vertical-align: top
+			+vcenter
+			top: 40%
+		.picture__text
+			text-transform: uppercase
+			color: #3B3B3B
+			+b
+		figcaption
+			font-size: 13px
+			line-height: 1
+			color: $green
+			vertical-align: top
+			margin-bottom: 3px
+			+cl
+
+.side__design
+	display: none
+	+clr
+	&.is_active
+		display: block
+	.select
+		&:after
+			top: 17px
+			border-color: #97A0A3 $n $n
+	label
+		display: block
+		font-size: 17px
+		color: $green
+		margin-bottom: 5px
+		+cl
+
+.select__text
+	height: 40px
+	border: 0
+	background-color: #eff2f4
+	line-height: 40px
+	padding: 0 8px 0 15px
+	color: $green
+	font-size: 18px
+	+cl
+.side_smaller
+	position: relative
+	width: 100px
+	+clr
+.box_border
+	border: 1px solid #97a0a3
+	height: 23px
+.input_color_style
+	float: left
+	span
+		font-size: 16px
+		color: $green
+		text-transform: uppercase
+		vertical-align: top
+		+cl
+	i
+		display: inline-block
+		border: 1px solid #000
+		margin: 2px
+		vertical-align: top
+		width: 17px
+		height: 17px
+
+.side_small
+	width: 135px
+	.select
+		border: 1px solid #97a0a3
+		height: 24px
+		background-color: $n
+		&:after
+			top: 8px
+			+arr(11, 6, #97A0A3, b)
+	.select__text
+		height: 22px
+		line-height: 22px
+		padding: 0 6px 6px 7px
+		margin: 0
+		background-color: $n
+.color_input
+	width: 100px
+	height: 23px
+	outline: 0
+	opacity: 0
+	position: absolute
+
+.side__form_wrap
+	margin-bottom: 20px
+	+clr
+.cayma_select
+	float: left
+	margin-right: 15px
+	width: 105px
+	height: 23px
+	border: 1px solid #97a0a3
+	background-color: $n
+	.select
+		height: 23px
+		&:after
+			top: 8px
+			+arr(11, 6, #97A0A3, b)
+	.select__text
+		height: 21px
+		line-height: 22px
+		background-color: $n
+		padding: 0 6px 6px 7px
+		margin: 0
+.border_pixel
+	display: inline-block
+	float: left
+	margin-right: 15px
+	height: 23px
+	width: 43px
+	text-align: center
+	color: $green
+	border: 1px solid #97a0a3
+	+placeholder
+		color: #161616
+		font-size: 16px
+		line-height: 1
+		+cl
+
+
+.style
+	font-size: 0
+.style_item
+	padding: 0 16px
+	background-color: #eff2f4
+	margin-bottom: 1px
+	+box
+	+tr(.3s)
+	&:last-child
+		margin-bottom: 0
+	&:hover
+		background-color: darken(#eff2f4, 10%)
+		a
+			color: #000
+			+c
+	&:active
+		a
+			color: #fff
+	a
+		font-size: 18px
+		color: $green
+		display: block
+		line-height: 40px
+		+cl

@@ -1,0 +1,70 @@
+.main__title
+	font-size: 24px
+	color: #35474c
+	margin-top: 20px
+	+c
+.container_tab
+	display: inline-block
+	font-size: 0
+	a
+		display: inline-block
+		vertical-align: top
+		margin: 0
+		padding: 0 10px
+		font-size: 20px
+		color: #35474c
+		text-decoration: none
+		border-bottom: 1px solid #d3d6d7
+		margin-bottom: 22px
+		+tr(.3s)
+		&:hover
+			color: #c3c3c3
+	.is_active
+		color: #18B1D5
+		border-bottom: 1px solid #35474C
+		&:hover
+			color: #18B1D5
+			border-bottom: 1px solid #35474C
+.main__big
+	text-align: center
+	+clr
+.template_img
+	display: inline-block
+	vertical-align: top
+	text-decoration: none
+	margin: 0 52px 34px 0
+	text-align: left
+	&:nth-child(6n)
+		margin-right: 0
+	&:hover
+		.tamplate_property
+			background-color: #00CFFF
+	&.is_active
+		.tamplate_property
+			background-color: #00CFFF
+			p
+				color: #35474C
+		.tamplate_property:after
+			background-image: url("../img/icons/icon-select_act.png")
+	img
+		vertical-align: top
+		max-width: 100%
+
+.tamplate_property
+	position: relative
+	vertical-align: top
+	background-color: #35474c
+	padding: 8px 32px 8px 18px
+	+tr(.3s)
+	&:after
+		content: ""
+		position: absolute
+		top: 12px
+		right: 10px
+		width: 18px
+		height: 13px
+		background-image: url("../img/icons/icon-select.png")
+	p
+		font-size: 16px
+		color: #D4E1E6
+		+c
